@@ -6,12 +6,6 @@ class MessagesController < ApplicationController
   end
 
   def create
-    @message = Message.new(params[:message])
-    
-    respond_to do |format|
-      format.html {redirect_to :action => 'index', :notice => 'Not AJAX'}
-      format.js
-    end
-    
+    @message = Message.create!(params[:message])
   end
 end
