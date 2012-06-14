@@ -1,21 +1,10 @@
-<h1>Listing messages</h1>
+<% title "Chat" %>
 
-<table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<ul id="chat">
+  <%= render @messages %>
+</ul>
 
-<% @messages.each do |message| %>
-  <tr>
-    <td><%= link_to 'Show', message %></td>
-    <td><%= link_to 'Edit', edit_message_path(message) %></td>
-    <td><%= link_to 'Destroy', message, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+<%= form_for Message.new, :remote => true do |f| %>
+  <%= f.text_field :content %>
+  <%= f.submit "Send" %>
 <% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Message', new_message_path %>
