@@ -5,7 +5,5 @@
 $(document).ready ->
   refreshId = setInterval(->
     $.ajax url: "http://localhost:3000/messages/retrieve"
-		  success: (data, textStatus, jqXHR) ->
-			  $('body').append "Successful AJAX call: #{data}"
   , 9000)
   $.ajaxSetup cache: false
