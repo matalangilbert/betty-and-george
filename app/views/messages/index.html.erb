@@ -1,10 +1,12 @@
-<% title "Chat" %>
+<h1>Talker</h1>
 
-<ul id="chat">
-  <%= render @messages %>
-</ul>
+<div id="message_list">
+  <%= render :partial => 'all_messages' %>
+</div>
 
 <%= form_for Message.new, :remote => true do |f| %>
   <%= f.text_field :content %>
   <%= f.submit "Send" %>
 <% end %>
+
+<%= link_to "Test", "http://localhost:3000/messages/retrieve.js", :remote => true %>

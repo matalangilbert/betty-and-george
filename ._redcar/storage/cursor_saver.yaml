@@ -1,0 +1,57 @@
+--- 
+cursor_positions: 
+  - :path: db/migrate/20120614112532_create_messages.rb
+    :cursor_offset: 0
+    :timestamp: 2012-06-14 12:25:32.181000 +01:00
+  - :path: db/migrate/20120614114538_add_column_name_to_message.rb
+    :cursor_offset: 0
+    :timestamp: 2012-06-14 12:45:38.340000 +01:00
+  - :path: app/views/messages/index.html.erb
+    :cursor_offset: 109
+    :timestamp: 2012-06-14 13:17:35.557000 +01:00
+  - :path: app/controllers/messages_controller.rb
+    :cursor_offset: 287
+    :timestamp: 2012-06-14 13:19:57.569000 +01:00
+  - :path: Gemfile
+    :cursor_offset: 170
+    :timestamp: 2012-06-14 15:51:27.792000 +01:00
+  - :path: app/models/message.rb
+    :cursor_offset: 61
+    :timestamp: 2012-06-14 16:13:05.702000 +01:00
+  - :path: app/assets/javascripts/application.js
+    :cursor_offset: 641
+    :timestamp: 2012-06-14 12:21:21.605000 +01:00
+  - :path: app/controllers/application_controller.rb
+    :cursor_offset: 78
+    :timestamp: 2012-06-14 16:39:45.796000 +01:00
+  - :path: app/views/messages/create.js.erb
+    :cursor_offset: 68
+    :timestamp: 2012-06-14 19:59:11.837000 +01:00
+  - :path: app/views/messages/_message.html.erb
+    :cursor_offset: 30
+    :timestamp: 2012-06-14 12:47:38.836000 +01:00
+  - :path: app/views/messages/_messages.html.erb
+    :cursor_offset: 47
+    :timestamp: 2012-06-14 20:52:30.877000 +01:00
+  - :path: config/application.rb
+    :cursor_offset: 85
+    :timestamp: 2012-06-14 16:05:25.907000 +01:00
+  - :path: app/views/messages/update_messages.js.erb
+    :cursor_offset: 103
+    :timestamp: 2012-06-14 20:45:15.087000 +01:00
+  - :path: config/routes.rb
+    :cursor_offset: 90
+    :timestamp: 2012-06-14 21:00:12.303000 +01:00
+  - :path: app/views/layouts/application.html.erb
+    :cursor_offset: 199
+    :timestamp: 2012-06-14 15:34:02.457000 +01:00
+  - :path: app/views/messages/update.js.erb
+    :cursor_offset: 60
+    :timestamp: 2012-06-14 21:03:29.451000 +01:00
+  - :path: app/views/messages/index.js.erb
+    :cursor_offset: 38
+    :timestamp: 2012-06-14 22:47:58.530000 +01:00
+  - :path: app/assets/javascripts/messages.js.coffee
+    :cursor_offset: 450
+    :timestamp: 2012-06-15 00:38:41.540000 +01:00
+files_to_retain: 0

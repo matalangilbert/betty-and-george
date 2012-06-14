@@ -1,4 +1,4 @@
-1339684536
+1339717191
 AddColumnNameToMessage	C:/Users/web/mat-temp/talker/db/migrate/20120614114538_add_column_name_to_message.rb	class AddColumnNameToMessage 
 Application	C:/Users/web/mat-temp/talker/config/application.rb	  class Application 
 ApplicationController	C:/Users/web/mat-temp/talker/app/controllers/application_controller.rb	class ApplicationController 
@@ -23,6 +23,7 @@ error_messages	C:/Users/web/mat-temp/talker/app/helpers/error_messages_helper.rb
 error_messages_for	C:/Users/web/mat-temp/talker/app/helpers/error_messages_helper.rb	  def error_messages_for(*objects)
 index	C:/Users/web/mat-temp/talker/app/controllers/messages_controller.rb	  def index
 javascript	C:/Users/web/mat-temp/talker/app/helpers/layout_helper.rb	  def javascript(*args)
+retrieve	C:/Users/web/mat-temp/talker/app/controllers/messages_controller.rb	  def retrieve
 show_title?	C:/Users/web/mat-temp/talker/app/helpers/layout_helper.rb	  def show_title?
 stylesheet	C:/Users/web/mat-temp/talker/app/helpers/layout_helper.rb	  def stylesheet(*args)
 test_homepage	C:/Users/web/mat-temp/talker/test/performance/browsing_test.rb	  def test_homepage
