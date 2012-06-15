@@ -3,8 +3,3 @@
 <div id="message_list">
   <%= render :partial => 'all_messages' %>
 </div>
-
-<%= form_for Message.new, :remote => true do |f| %>
-  <%= f.text_field :content %>
-  <%= f.submit "Send" %>
-<% end %>
