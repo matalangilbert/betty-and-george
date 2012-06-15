@@ -4,6 +4,6 @@
 
 $(document).ready ->
   refreshId = setInterval(->
-    $.ajax url: "http://localhost:3000/messages/retrieve"
+    $.ajax url: "http://hollow-flower-9984.herokuapp.com/messages/retrieve"
   , 9000)
   $.ajaxSetup cache: false
