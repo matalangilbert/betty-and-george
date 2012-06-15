@@ -12,6 +12,6 @@ class MessagesController < ApplicationController
   
   def retrieve
     logger.debug "HERE"
-    @messages = Message.last(10)
+    @messages = Message.last(12).reverse
   end
 end
