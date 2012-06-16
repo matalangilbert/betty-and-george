@@ -7,20 +7,24 @@ body {
                             CC padding) + RC fullwidth */
 }
 
+#body {
+    background-color: #F1F0FF; /* titan white */
+}
+
 #message_list {
   border-style: double;
   border-width: 5px;
 }
 
 #header {
-  padding-bottom: 30px;
+  padding: 30px;
   text-align: center;
+  color: #443266; /* blue violet */
 }
 
 #container {
   padding-left: 200px;   /* LC fullwidth */
   padding-right: 190px;  /* RC fullwidth + CC padding */
-  padding-top: 20px;
   padding-bottom: 20px;
 }
 #container .column {
@@ -28,7 +32,7 @@ body {
   float: left;
 }
 #center {
-  padding: 10px 00px;    /* CC padding */
+  padding: 0px 0px;    /* CC padding */
   width: 100%;
 }
 
@@ -43,7 +47,7 @@ body {
 #left {
   width: 180px;          /* LC width */
   padding: 0 10px;       /* LC padding */
-  right: 240px;          /* LC fullwidth + CC padding */
+  right: 200px;          /* LC fullwidth + CC padding */
   margin-left: -100%;
 
 }
