@@ -7,3 +7,4 @@ $(document).ready ->
     $.ajax url: '/messages/retrieve'
   , 9000)
   $.ajaxSetup cache: false
+  
