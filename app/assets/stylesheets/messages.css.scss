@@ -8,27 +8,38 @@ body {
 }
 
 #message_list {
-  background-color: yellow;
   border-style: double;
   border-width: 5px;
 }
 
 #header {
   padding-bottom: 30px;
+  text-align: center;
 }
 
 #container {
   padding-left: 200px;   /* LC fullwidth */
   padding-right: 190px;  /* RC fullwidth + CC padding */
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 #container .column {
   position: relative;
   float: left;
 }
 #center {
-  padding: 10px 20px;    /* CC padding */
+  padding: 10px 00px;    /* CC padding */
   width: 100%;
 }
+
+#even {
+  background-color: #C3C3E5;
+}
+
+#odd {
+  background-color: #F1F0FF;
+}
+
 #left {
   width: 180px;          /* LC width */
   padding: 0 10px;       /* LC padding */
@@ -43,6 +54,7 @@ body {
 
 }
 #footer {
+  padding-top: 30px;
   clear: both;
 }
 

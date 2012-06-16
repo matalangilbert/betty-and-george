@@ -1,3 +1,7 @@
-<div id="chat">
-  <%= render @messages %>
+<div id="message_list">
+  <% for message in @messages do %>
+    <div id="<%= cycle("even","odd") %>">
+      <%= render message %>  
+    </div>
+  <% end %>
 </div> 
