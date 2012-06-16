@@ -1,5 +1,0 @@
---- 
-open_files: 
-  - app/views/messages/index.html.erb
-  - app/views/messages/create.js.erb
-  - app/controllers/messages_controller.rb
