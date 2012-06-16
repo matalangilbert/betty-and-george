@@ -1,7 +1,9 @@
 <div id="message_list">
-  <% for message in @messages do %>
-    <div id="<%= cycle("even","odd") %>">
-      <%= render message %>  
-    </div>
-  <% end %>
+  <table id="messages_table">
+    <% for message in @messages do %>
+      <tr id="<%= cycle("even","odd") %>">
+        <%= render message %>  
+      </div>
+    <% end %>
+  </table>
 </div> 

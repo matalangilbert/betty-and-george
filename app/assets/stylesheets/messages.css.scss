@@ -5,6 +5,7 @@
 body {
   min-width: 630px;      /* 2x (LC fullwidth +
                             CC padding) + RC fullwidth */
+  
 }
 
 #body {
@@ -12,43 +13,73 @@ body {
   font-family: 'Gill Sans';    /* 'Asul', sans-serif; */
   font-size: 16px;
   border-radius: 30px;
+  background-color: #F1F0FF; /* titan white */
 }
 
 #share {
- padding: 5px;
+  padding: 20px;
+  background-color: white;
+    border-radius: 30px;
+    text-align: center;
 }
 
 #message_list {
-  border-style: double;
   border-width: 5px;
   padding: 5px;
-  line-height: 1.3;
+  font-weight: bold;
+}
+
+TD {
+  font-size: 20px;
+    line-height: 150%;
+}
+
+#messages_table {
+  width: 85%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 #header {
-  padding: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-top: 1px;
   text-align: center;
-  color: #443266; /* blue violet */
-  background-color:darken(#F1F0FF,1);
+  /*color: #443266; /* blue violet */
+  /*background-color:darken(#F1F0FF,1);*/
+  background-color: #443266;
+  color: #F1F0FF;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  font-size: 16px;
+  line-height: 150%;
+  font-family: Copse, Georgia, serif;
+;
+  
+  
+  h1 {
+    font-family: Copse, Georgia, serif;
+    font-size: 30px;
+  }
+  
 }
 
 #container {
   padding-left: 200px;   /* LC fullwidth */
   padding-right: 190px;  /* RC fullwidth + CC padding */
-  padding-bottom: 20px;
+  padding-bottom: 5px;
   padding-top: 25px;
   border-radius: 30px;
 }
 #container .column {
   position: relative;
   float: left;
-  background-color: white;
+  background-color: #F1F0FF; /* titan white */
 }
 #center {
   padding: 0px, 0px;     /* CC padding (padding-left + padding right) */
-  width: 100%;
+  width: 90%;
 }
 
 #even {
@@ -60,34 +91,47 @@ body {
 }
 
 #left {
-  width: 160px;          /* LC width */
+  width: 190px;          /* LC width */
   padding: 0 10px;       /* LC padding */
   right: 200px;          /* LC fullwidth + CC padding */
-  margin-left: -100%;
-  border-radius: 0px;
-  padding-bottom: 15.6em;
-  border-style: solid;
-  
+  margin-left: -87%;
+  margin-top: 10%;
 }
 #right {
-  width: 130px;          /* RC width */
+  width: 180px;          /* RC width */
   padding: 0 10px;       /* RC padding */
-  margin-right: -190px;  /* RC fullwidth + CC padding*/
+  margin-right: -160px;  /* RC fullwidth + CC padding*/
+  margin-left: 0px;
 }
 #footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right:30px;
+  padding-bottom:0px;
+  padding-top:30px;
   clear: both;
   background-color: #F1F0FF; /* titan white */
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
   text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 150%;
 }
 
-#contact_list {
-  text-align: left;
-}
+#contact {
+      text-align: left;;
+      font-size: 20px;
+      background-color: white;
+      padding: 10%;
+      border-radius: 15px;
+    }
 
+#copyright {
+  background-color: white;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
 /*** IE Fix ***/
 * html #left {
   left: 150px;           /* RC fullwidth */
