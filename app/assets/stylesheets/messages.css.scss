@@ -60,11 +60,14 @@ body {
 }
 
 #left {
-  width: 180px;          /* LC width */
+  width: 160px;          /* LC width */
   padding: 0 10px;       /* LC padding */
   right: 200px;          /* LC fullwidth + CC padding */
   margin-left: -100%;
-  border-radius: 30px;
+  border-radius: 0px;
+  padding-bottom: 15.6em;
+  border-style: solid;
+  
 }
 #right {
   width: 130px;          /* RC width */
