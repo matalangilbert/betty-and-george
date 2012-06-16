@@ -5,5 +5,5 @@
 $(document).ready ->
   refreshId = setInterval(->
     $.ajax url: '/messages/retrieve'
-  , 9000)
+  , 5000)
   $.ajaxSetup cache: false
