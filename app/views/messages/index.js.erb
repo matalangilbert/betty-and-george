@@ -1,0 +1,1 @@
+$("#all_messages").append("<div class='page'><%unless @messages.blank?%><%= escape_javascript(render :partial => 'all_messages') %><%end%></div>");

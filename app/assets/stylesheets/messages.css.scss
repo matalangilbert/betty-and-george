@@ -29,15 +29,24 @@ body {
   font-weight: bold;
 }
 
-TD {
+td {
   font-size: 20px;
-    line-height: 150%;
+  line-height: 150%;
+}
+
+.created_at {
+  width: 83px;
 }
 
 #messages_table {
   width: 85%;
   margin-left: 10%;
   margin-right: 10%;
+}
+
+#all_messages {
+  text-align: left;
+  align: left;
 }
 
 #header {

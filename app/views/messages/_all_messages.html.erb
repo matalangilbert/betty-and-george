@@ -1,9 +1,15 @@
-<div id="message_list">
-  <table id="messages_table">
-    <% for message in @messages do %>
-      <tr id="<%= cycle("even","odd") %>">
+<% unless @messages.blank?%>
+  <div id="message_list">
+    <table id="messages_table">
+      <% for message in @messages do %>
+        <% if @color == "even"%>
+          <tr id="<%= cycle("odd","even") %>">
+        <% else %>
+          <tr id="<%= cycle("even","odd") %>">
+        <% end %>
         <%= render message %>  
-      </div>
-    <% end %>
-  </table>
-</div> 
+        </tr>
+      <% end %>
+    </table>
+  </div> 
+<% end%>

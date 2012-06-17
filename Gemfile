@@ -4,6 +4,7 @@ ruby '1.9.3'
 gem 'rails', '3.2.6'
 gem 'cleverbot'
 gem 'heroku'
+gem 'kaminari'
 
 group :development do
   gem 'sqlite3'

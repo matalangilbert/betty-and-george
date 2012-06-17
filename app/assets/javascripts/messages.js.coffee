@@ -4,8 +4,9 @@
 
 $(document).ready ->
   refreshId = setInterval(->
-    $.ajax url: '/messages/retrieve'
-  , 9000)
+    $.ajax 
+      url: '/messages/retrieve?' + "created_at="+$(".created_at:first").text() + "&color="+$("tr:first").attr('id')
+  , 5000)
   $.ajaxSetup cache: false
   
 # Google +1
@@ -17,3 +18,24 @@ $(document).ready ->
   s = document.getElementsByTagName("script")[0]
   s.parentNode.insertBefore po, s
 )()
+
+# Endless scroll
+(->
+  nearBottomOfPage = ->
+    $(window).scrollTop() > $(document).height() - $(window).height() - 180
+  page = 1
+  loading = false
+  $(window).scroll ->
+    return  if loading
+    if nearBottomOfPage()
+      loading = true
+      page++
+      $.ajax
+        url: "/messages?page=" + page
+        type: "get"
+        dataType: "script"
+        success: ->
+          loading = false
+)()
+
+
