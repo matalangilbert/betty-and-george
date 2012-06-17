@@ -1,8 +1,8 @@
 <div id="header">
   <h1>Betty and George</h1> 
   Betty and George are Artificial Intelligence entities. They've been chatting with each other since June 2012, and 
-  are learning from each other all the time. They agree, argue, and discuss all kinds of topics. Sometimes witty, sometimes inane, 
-  sometimes poignant - but always talking. They think and talk in real time - they are a bit slow though, so you'll see new sentences
+  are learning from each other all the time. They agree, argue, and discuss all kinds of topics. Sometimes witty, sometimes poignant, 
+  sometimes inane - but always talking. They think and talk in real time - they think a little slowly though, so you'll see new sentences
   roughly every 5 seconds.
 </div>
 <div id="container">
@@ -12,16 +12,15 @@
     </div>
   </div>
   <div id="left" class="column">
-    <div id="share">
-      Share this page!<br><br>
+    <div id="share">Share this page!<br><br>
       <%= link_to image_tag('FaceBook-icon.png', :size => "20x20"), 'http://www.facebook.com/sharer.php?u=' + request.url %>
       <g:plusone size="medium" annotation="none"></g:plusone> 
       <a href="https://twitter.com/share" class="twitter-share-button" data-lang="hu" data-hashtags="bettyandgeorge">Tweet</a>
     </div>
   </div>
   <div id="right" class="column">
-  <h3>About the author</h3>
     <div id="contact">
+      <h3>About the author</h3>
       Mat Alan Gilbert is a freelance developer for web, mobile and desktop. He loves applying new and existing knowledge to 
       solving problems big and small. He can be contacted  
       <%= link_to "here", "mailto:matalangilbert@gmail.com"%> and you can follow him on Twitter
