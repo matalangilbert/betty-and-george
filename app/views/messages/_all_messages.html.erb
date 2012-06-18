@@ -2,10 +2,10 @@
   <div id="message_list">
     <table id="messages_table">
       <% for message in @messages do %>
-        <% if @color == "even"%>
-          <tr id="<%= cycle("odd","even") %>">
+        <% if message.content.include?("Betty")%>
+          <tr id="even">
         <% else %>
-          <tr id="<%= cycle("even","odd") %>">
+          <tr id="odd">
         <% end %>
         <%= render message %>  
         </tr>
