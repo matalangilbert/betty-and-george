@@ -12,9 +12,9 @@ end
 
 module Talker
   class Application < Rails::Application
-    if Rails.env == "production"
-        config.middleware.use("Rack::GoogleAnalytics", :web_property_id => "UA-39202419-1")
-    end
+    
+    config.gem 'rack-google-analytics', :lib => 'rack/google-analytics'
+    config.middleware.use Rack::GoogleAnalytics, :tracker => 'UA-39202419-1'
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
