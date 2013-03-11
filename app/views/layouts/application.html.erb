@@ -3,6 +3,9 @@
   <head>
     <link href='http://fonts.googleapis.com/css?family=Asul' rel='stylesheet' type='text/css'>
     <title><%= content_for?(:title) ? yield(:title) : "Betty and George" %></title>
+
+    <%= analytics_init if Rails.env.production? %>
+
     <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag :application %>
     
