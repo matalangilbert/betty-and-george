@@ -8,18 +8,6 @@
     
     <%= csrf_meta_tag %>
     <%= yield(:head) %>
-  </head>
-  <body>
-    <div id="body">
-      <% flash.each do |name, msg| %>
-        <%= content_tag :div, msg, :id => "flash_#{name}" %>
-      <% end %>
-      <%= content_tag :h1, yield(:title) if show_title? %>
-      <%= yield %>
-    </div>
-  </body>
-</html>
-
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -33,3 +21,16 @@
   })();
 
 </script>
+    
+  </head>
+  <body>
+    <div id="body">
+      <% flash.each do |name, msg| %>
+        <%= content_tag :div, msg, :id => "flash_#{name}" %>
+      <% end %>
+      <%= content_tag :h1, yield(:title) if show_title? %>
+      <%= yield %>
+    </div>
+  </body>
+</html>
+
